@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Страница не найдена — Keyforge">
+  <title>404 — Страница не найдена | Keyforge</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="error-page">
+
+<main class="error-wrapper">
+  <div class="error-badge">ERR_PAGE_NOT_FOUND</div>
+  <h1 class="error-code">4<span>0</span>4</h1>
+  <div class="error-title">Страница зашифрована или удалена</div>
+  <p class="error-desc">Похоже, нужный адрес не существует или ключ доступа был сброшен.</p>
+
+  <div class="terminal-card">
+    <div class="terminal-header">
+      <span class="term-dot"></span>
+      <span class="term-dot"></span>
+      <span class="term-dot"></span>
+      <span class="term-title">keyforge-debugger v1.0.4</span>
+    </div>
+    <div class="terminal-body">
+      <div class="term-line"><span class="prompt">$</span> check-route --path="<span id="currentPath">/unknown</span>"</div>
+      <div class="term-line warning">[WARN] Route missing. Executing brute-force bypass...</div>
+      <div class="term-line crack-status">Attempting hash: <b id="bruteText">a8X#kL9!mQ2@pZ</b></div>
+      <div class="term-line result-line" id="termReason">Причина: Эту страницу зашифровали 64-символьным ключом и забыли пароль.</div>
+    </div>
+  </div>
+
+  <div class="error-actions">
+    <a href="index.html" class="btn btn-primary">← На главную</a>
+    <button id="nextExcuse" class="btn btn-secondary">Сгенерировать причину ↻</button>
+  </div>
+</main>
+
+<script src="js/404.js"></script>
+<script src="js/ambient.js"></script>
+</body>
+</html>
